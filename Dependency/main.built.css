@@ -9727,7 +9727,7 @@ only screen and (max-width:1068px)and (min-resolution:144dpi) {
 only screen and (max-width:735px)and (min-resolution:1.5dppx),
 only screen and (max-width:735px)and (min-resolution:144dpi) {
     .section-XWFcare .image-battery-coverage-icon {
-        background-image: url(../img/battery_icon__fi0frlkcppua_small_2x.png)
+        background-image: url(../img/battery_icon__small_2x.png)
     }
 }
 
