@@ -1,0 +1,43 @@
+.section-hero .image-hero-lockup {
+
+    background-image: url("/support/products/images/iphone/applecare_iphone_hero__e8bcpbktzdqy_large.png");
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .image-hero-lockup {
+        background-image: url("/support/products/images/iphone/applecare_iphone_hero__e8bcpbktzdqy_large_2x.png")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .image-hero-lockup {
+
+        background-image: url("/support/products/images/iphone/applecare_iphone_hero__e8bcpbktzdqy_medium.png")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .image-hero-lockup {
+        background-image: url("/support/products/images/iphone/applecare_iphone_hero__e8bcpbktzdqy_medium_2x.png")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .image-hero-lockup {
+
+        background-image: url("/support/products/images/iphone/applecare_iphone_hero__e8bcpbktzdqy_small.png")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .image-hero-lockup {
+        background-image: url("/support/products/images/iphone/applecare_iphone_hero__e8bcpbktzdqy_small_2x.png")
+    }
+}
+
+/* center align for bigger font-size large and medium  0.6em */
+html[lang=zh-CN] .centeralign_06i { padding-left: 0.4em; }
+@media only screen and (max-width: 1068px) { html[lang=zh-CN] .centeralign_06i { padding-left: 0; } }
+@media only screen and (max-width: 735px) { html[lang=zh-CN] .centeralign_06i { padding-left: 0; } }
+@media only screen and (max-width: 735px) and (max-device-width: 768px) { html[lang=zh-CN] .centeralign_06i { padding-left: 0; } }

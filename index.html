@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="stylesheet" type="text/css" href="./Dependency/globalheader.css">
+	<link rel="stylesheet" type="text/css" href="./Dependency/ac-globalfooter.built.css">
+	<link rel="stylesheet" type="text/css" href="./Dependency/ac-localnav.built.css">
+	<title>XWF Care 产品 - Yagi - BG7XWF (中国大陆)</title>
+	<meta name="Description" content="了解如何组装与使用你的 Yagi。天线专家BG7XWF能帮你排除故障、提出安装建议，以及解答 XWF Yagi 使用方面的问题。">
+	<link rel="stylesheet" href="./Dependency/fonts">
+	<link rel="stylesheet" href="./Dependency/main.built.css" type="text/css">
+	<link rel="stylesheet" href="./Dependency/iphone.built.css" type="text/css">
+	<script src="./Dependency/head.built.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="./Dependency/fonts(1)" type="text/css">
+	<link rel="stylesheet" href="./Dependency/sfpro-cn.css">
+	<link rel="stylesheet" href="./Dependency/yagi.images.css" type="text/css">
+	<link rel="stylesheet" href="./Dependency/yagi(1).built.css" type="text/css">
+</head>
+
+<body class="page-iphone ">
+	<div style="display:none;"><img src="./Dependency/XWFcare__og" alt="yagi"></div>
+	<style>
+		:root {
+			--r-adv-height: 40px;
+		}
+
+		html {
+			margin-top: var(--r-adv-height, 40px);
+		}
+
+		body #ac-globalnav,
+		html #globalnav {
+			top: var(--global-nav-ad-bar-height);
+		}
+
+		body {
+			border-top: 1px solid transparent;
+			margin-top: -1px;
+			position: relative;
+		}
+
+		html.oldie body {
+			overflow-x: visible;
+		}
+
+		[data-ac-gn-flyout-open="true"] {
+			--r-gn-topbar-override: var(--r-ac-gn-background-opened);
+			--r-gn-topbar-override-dark: var(--r-ac-gn-background-opened-dark);
+		}
+
+		#ac-localeswitcher {
+			z-index: 10001 !important;
+		}
+
+		.adv-wrapper {
+			--globalmessage-segment-background: rgb(251, 251, 253);
+			--globalmessage-segment-scrim-background: rgba(0, 0, 0, .04);
+			--globalmessage-segment-text-color: rgba(0, 0, 0, .8);
+			--globalmessage-segment-border-color: rgba(0, 0, 0, .16);
+			position: absolute;
+			top: calc(-1 * var(--r-adv-height, 40px));
+			z-index: 10000 !important;
+			background: var(--globalmessage-segment-background);
+			color: var(--globalmessage-segment-text-color);
+			line-height: 1;
+			width: 100%;
+			right: 0;
+			height: var(--r-adv-height, 40px);
+			z-index: 9999;
+		}
+
+		.adv-wrapper:after {
+			position: absolute;
+			top: 0;
+			background: var(--globalmessage-segment-scrim-background);
+			z-index: 1;
+			width: 100%;
+			height: var(--r-adv-height, 40px);
+			content: "";
+		}
+
+		.adv-wrapper-dark {
+			background: var(--r-gn-topbar-override-dark, var(--r-topbar-background-color-dark, var(--r-globalnav-segmentbar-background-color-dark, rgb(22, 22, 23))));
+		}
+
+		.globalheader-dark .adv-wrapper {
+			--globalmessage-segment-background: rgb(22, 22, 23);
+			--globalmessage-segment-scrim-background: rgba(255, 255, 255, .08);
+			--globalmessage-segment-text-color: rgba(255, 255, 255, .92);
+			--globalmessage-segment-border-color: rgba(255, 255, 255, .24);
+		}
+
+		.theme-dark .adv-wrapper {
+			background: var(--r-gn-topbar-override-dark, var(--r-topbar-background-color-dark, var(--r-globalnav-segmentbar-background-color-dark, rgb(22, 22, 23))));
+		}
+
+		.adv-wrapper-dark:after {
+			background: transparent;
+		}
+
+		.globalheader-dark .adv-wrapper:after {
+			background: var(--globalmessage-segment-scrim-background);
+		}
+
+		.theme-dark .adv-wrapper:after {
+			background: var(--globalmessage-segment-scrim-background);
+		}
+
+		.globalmessage-segment-visible .adv-wrapper {
+			position: absolute;
+			top: calc(-1 * var(--r-adv-height, 40px));
+		}
+
+		.globalmessage-segment-visible .macpro-gg .adv-wrapper {
+			top: 0px;
+		}
+
+		.adv-wrapper .adv-wrapper-text {
+			color: rgba(0, 0, 0, 0.8);
+			display: block;
+			line-height: var(--r-adv-height, 40px);
+			overflow: hidden;
+			text-decoration: none;
+			text-overflow: ellipsis;
+			text-align: right;
+			max-width: 980px;
+			margin: 0 auto;
+		}
+
+		.adv-wrapper-dark .adv-wrapper-text {
+			color: rgba(255, 255, 255, 0.92);
+		}
+
+		.globalheader-dark .adv-wrapper .adv-wrapper-text {
+			color: rgba(255, 255, 255, 0.92);
+		}
+
+		.theme-dark .adv-wrapper .adv-wrapper-text {
+			color: rgba(255, 255, 255, 0.92);
+		}
+
+		.globalmessage-segment-visible .adv-wrapper {
+			width: 20%
+		}
+
+		@media only screen and (max-width: 1023px) {
+			.adv-wrapper {
+				min-width: 20%
+			}
+
+			.adv-wrapper .adv-wrapper-text {
+				margin-left: auto;
+				width: auto;
+				padding: 0 22px;
+				position: relative;
+				left: 0;
+				padding-left: calc(max(22px, env(safe-area-inset-left)));
+				padding-right: calc(max(22px, env(safe-area-inset-right)));
+			}
+
+			.globalmessage-segment-visible .adv-wrapper .adv-wrapper-text {
+				width: auto;
+				position: relative;
+				padding: 0 12px;
+				left: -6%;
+				margin: 0;
+			}
+
+			.globalmessage-segment-visible #sonic-automotive.profiles.platter.full-nav.ac-gn-current-iphone .adv-wrapper .adv-wrapper-text,
+			.globalmessage-segment-visible #ducati.profiles.platter.full-nav.ac-gn-current-iphone .adv-wrapper .adv-wrapper-text,
+			.globalmessage-segment-visible #mayo-clinic.profiles.platter.ac-gn-current-iphone.full-nav .adv-wrapper .adv-wrapper-text {
+				left: -27%;
+			}
+		}
+
+		@media only screen and (max-width: 767px) {
+			.adv-wrapper .adv-wrapper-text {
+				line-height: var(--r-adv-height, 40px);
+				margin-left: auto;
+				width: auto;
+				padding: 0 16px;
+				position: relative;
+				left: 0;
+			}
+
+			.globalmessage-segment-visible .adv-wrapper .adv-wrapper-text {
+				width: auto;
+				position: relative;
+				left: 0;
+				margin: 0;
+			}
+
+			.globalmessage-segment-visible #sonic-automotive.profiles.platter.full-nav.ac-gn-current-iphone .adv-wrapper .adv-wrapper-text,
+			.globalmessage-segment-visible #ducati.profiles.platter.full-nav.ac-gn-current-iphone .adv-wrapper .adv-wrapper-text,
+			.globalmessage-segment-visible #mayo-clinic.profiles.platter.ac-gn-current-iphone.full-nav .adv-wrapper .adv-wrapper-text {
+				left: -25%;
+			}
+
+			:root {
+				--r-adv-height: 44px;
+			}
+		}
+
+		.adv-wrapper .adv-wrapper-text {
+			color: rgba(0, 0, 0, 0.8);
+			font-size: 12px;
+			font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+		}
+
+		.adv-wrapper-dark .adv-wrapper-text {
+			color: rgba(255, 255, 255, 0.92);
+		}
+
+		.globalheader-dark .adv-wrapper {
+			color: rgba(255, 255, 255, 0.92);
+		}
+
+		/* Always show in IE8, whether zoom because IE8 doesnt have responsive. */
+		/* hack for IE8 without shop button */
+		/*js no-touch no-svg ie8 no-progressive no-transforms no-tablet no-handheld no-oldTablet no-maskBoxImage no-maskedParallaxAnimation no-webgl no-video no-inlineVideo no-canvas cssFilter no-cssTransition2d no-cssTransition3d ie*/
+
+		html.ie8,
+		html.oldie,
+		html.oldIE {
+			margin-top: 0px !important;
+		}
+
+		html.ie8 .adv-wrapper,
+		html.oldie .adv-wrapper,
+		html.oldIE .adv-wrapper {
+			position: relative;
+			top: 0px;
+			min-width: 1024px;
+		}
+
+		html.ie8 .adv-wrapper .adv-wrapper-text,
+		html.oldie .adv-wrapper .adv-wrapper-text,
+		html.oldIE .adv-wrapper .adv-wrapper-text {
+			line-height: 40px;
+		}
+
+		html.ie8 #globalnav,
+		html.oldie #globalnav,
+		html.oldIE #globalnav {
+			top: 40px;
+		}
+
+		html.ie8 .ac-familybrowser,
+		html.oldie .ac-familybrowser,
+		html.oldIE .ac-familybrowser {
+			top: 84px;
+		}
+
+		html.ie8 .ac-nav-overlap .chapternav,
+		html.oldie .ac-nav-overlap .chapternav,
+		html.oldIE .ac-nav-overlap .chapternav {
+			margin-top: 84px;
+		}
+
+		/* hack for IE8 with shop button*/
+		html.ie8.globalmessage-segment-visible #globalmessage-segment,
+		html.oldie.globalmessage-segment-visible #globalmessage-segment,
+		html.oldIE.globalmessage-segment-visible #globalmessage-segment {
+			position: relative;
+			top: 0;
+		}
+
+		html.ie8.globalmessage-segment-visible .adv-wrapper,
+		html.oldie.globalmessage-segment-visible .adv-wrapper,
+		html.oldIE.globalmessage-segment-visible .adv-wrapper {
+			position: absolute;
+			min-width: auto;
+		}
+
+		/* fix adv aglin*/
+		@media only screen and (max-width: 833px) {
+			.adv-wrapper .adv-wrapper-text {
+				padding-left: calc(max(16px, env(safe-area-inset-left)));
+				padding-right: calc(max(16px, env(safe-area-inset-right)));
+			}
+		}
+
+		.globalmessage-segment-visible .adv-wrapper {
+			width: unset;
+		}
+
+		.globalmessage-segment-visible .adv-wrapper .adv-wrapper-text {
+			position: relative;
+			padding: 0;
+			left: unset;
+			right: max(calc(((100vw - 1024px) / 2) + 14px), 22px);
+		}
+
+		@media only screen and (max-width: 833px) {
+			.globalmessage-segment-visible .adv-wrapper .adv-wrapper-text {
+				right: max(calc(((100vw - 1024px) / 2) + 16px), 16px);
+			}
+		}
+	</style>
+	<script type="text/javascript" src="./Dependency/globalheader.umd.js"></script>
+	<script src="./Dependency/ac-analytics.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Dependency/auto-init.js" type="text/javascript" charset="utf-8"></script>
+	<input type="checkbox" id="ac-ln-menustate" class="ac-ln-menustate">
+	<div id="ac-ln-sticky-placeholder" class="css-sticky"></div>
+	<nav id="ac-localnav" class="medium-ac-ln-collapsible js no-touch css-sticky" lang="zh-CN" dir="ltr" data-sticky=""
+		data-analytics-activitymap-region-id="local nav" role="navigation" aria-label="本地" data-analytics-region="null" style="margin-top: -40px;">
+		<div class="ac-ln-wrapper">
+			<div class="ac-ln-background"></div>
+			<div class="ac-ln-content">
+				<div class="ac-ln-title">
+					<a href="/" data-analytics-title="product index">XWF Care 产品</a>
+				</div>
+				<div class="ac-ln-menu">
+					<div class="ac-ln-menu-tray">
+						<ul class="ac-ln-menu-items">
+							<li class="ac-ln-menu-item">
+								<a href="/" class="ac-ln-menu-link"
+									data-analytics-title="多波段八木">多波段八木</a>
+							</li>
+							<li class="ac-ln-menu-item">
+								<a href="/" class="ac-ln-menu-link"
+									data-analytics-title="单波段八木">单波段八木</a>
+							</li>
+							<li class="ac-ln-menu-item">
+								<span class="ac-ln-menu-link current" role="link" aria-disabled="true"
+									aria-current="基地八木">基地八木</span>
+							</li>
+							<li class="ac-ln-menu-item">
+								<a href="/" class="ac-ln-menu-link"
+									data-analytics-title="比赛八木">比赛八木</a>
+							</li>
+							<li class="ac-ln-menu-item">
+								<a href="/" class="ac-ln-menu-link"
+									data-analytics-title="特殊需求定制">特殊需求定制</a>
+							</li>
+							<li class="ac-ln-menu-item">
+								<span class="ac-ln-menu-link current" role="link" aria-disabled="true"
+									aria-current="XWF Care+">XWF Care+</a>
+							</li>
+						</ul>
+					</div>
+					<div class="ac-ln-actions">
+						<div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+							<label for="ac-ln-menustate" class="ac-ln-menucta">
+								<span class="ac-ln-menucta-chevron"></span>
+							</label>
+						</div>
+						<div class="ac-ln-action ac-ln-action-button">
+							<a class="ac-ln-button" href="https://checkcoverage.apple.com/cn/zh/"
+								data-analytics-title="buy now" data-analytics-exit-link="">立即购买<span
+									class="ac-ln-action-product">购买 XWF care 产品</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<label id="ac-ln-curtain" for="ac-ln-menustate"></label>
+	<script type="text/javascript" src="./Dependency/ac-localnav.built.js"></script>
+	<div id="ac-ln-viewport-emitter" data-viewport-emitter-dispatch=""
+		data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}">
+	</div>
+
+	<main id="main" class="main" role="main" data-page-type="iphone">
+		<section class="section section-hero" data-analytics-section-engagement="name:hero">
+			<div class="section-content">
+				<div class="row lockupBottom">
+					<div class="column large-12 large-centered small-12">
+						<figure class="image-hero-icon"></figure>
+						<h1 class="typography-headline-elevated large-10 large-centered small-12">由精通 Yagi 的专家提供服务<span class="nowrap centeralign_06i">和支持</span></h1>
+						<p class="typography-intro-elevated">由于反射器、引向器、有源振子与主梁都由 XWF 自主研制或设计，我们十分了解各方面如何协同运作，并能通过简单交谈帮你解决大部分问题。</p>
+						<figure class="image-hero-lockup"></figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-XWFcare" data-analytics-section-engagement="name:XWFcare+">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-11 large-centered small-12 small-uncentered">
+						<h2 class="typography-XWFcare-headline">购买适用于 XWF Yagi 的 XWFcare+ <span class="nowrap">全方位意外随心享服务</span>计划，<span class="nowrap">给你</span>安心保障。</h2>
+						<p class="typography-intro-elevated">专为 XWF 八木打造的 XWF Care 随心享，提供高效多方位的意外保障解决方案。XWF Care 随心享（1年版）包含 1 年内 1 次QBG保修权益，XWF Care 随心享（2年版）包含 2 年内 3 次QBG保修权益和第二年官方延保服务，让您安心随行，野架随心。</p>
+					</div>
+				</div>
+				<div class="row badges-container">
+					<div class="column large-3
+								small-12 badge-container">
+						<figure class="badge badge-center">
+							<div class="badge-content">
+								<figure class="image-hardware-coverage-icon"></figure>
+								<span class="badge-caption">由 XWF 提供的服务和支持</span>
+							</div>
+						</figure>
+					</div>
+					<div class="column large-3
+								small-12 badge-container">
+						<figure class="badge badge-center">
+							<div class="badge-content">
+								<figure class="image-technical-support-icon"></figure>
+								<span class="badge-caption">优先获得 XWF 的咨询服务</span>
+							</div>
+						</figure>
+					</div>
+					<div class="column large-3
+								small-12 badge-container">
+						<figure class="badge badge-center">
+							<div class="badge-content">
+								<figure class="image-accidental-damage-icon"></figure>
+								<span class="badge-caption">获得一年一次的意外QBG保修<span class="nowrap">服务<sup></sup></span></span>
+							</div>
+						</figure>
+					</div>
+					<div class="column large-3
+								small-12 badge-container">
+						<figure class="badge badge-center">
+							<div class="badge-content">
+								<figure class="image-battery-coverage-icon"></figure>
+								<span class="badge-caption">雷击 (QBG) 救援服务<sup></sup></span>
+							</div>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-technical" data-analytics-section-engagement="name:one stop">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-4 large-offset-1 small-12 small-offset-0 heading-column">
+						<h2 class="typography-headline">专 线 专 享<br class="large-show medium-show small-hide">优 先 服 务</h2>
+					</div>
+					<div class="column large-6  small-12">
+						<p>当需要服务支持时，您可使用VIP专用联系方式，优先获得 XWF 本人的技术支持和帮助。如果你需要维修或更换，我们有便利的服务选项可供挑选。</p>
+						<ul>
+							<li>您的天线会通过 VIP 专享通道接受维修或者置换服务，更快回到您的手中。</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-hardware" data-analytics-section-engagement="name:hardware">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-4 large-offset-1 small-12 small-offset-0 heading-column">
+						<h2 class="typography-headline">原 厂 保 养<br class="large-show medium-show small-hide">品 质 保 证</h2>
+						<div class="column large-5 small-12">
+							<figure class="icon-accidental-damage"></figure>
+							<figcaption class="typography-caption">按随心享套餐获得相应的意外QBG保养服务</figcaption>
+						</div>
+						<div class="column large-5 large-offset-1 small-offset-0 small-12">
+							<figure class="icon-battery-status"></figure>
+							<figcaption class="typography-caption">当天线遭遇雷击时，可获得雷击保养服务</figcaption>
+						</div>
+					</div>
+					<div class="column large-6  small-12">
+						<p>XWF维修中心提供产品保养服务，包含八木天线检测升级，清洁和易损耗零部件更换项目，让您的产品始终处于最佳状态。</p>
+						<ul>
+							<li>XWF Care 随心享（1 年版）包含 1 年内 1 次原厂保养服务</li>
+							<li>XWF Care 随心享（2 年版）包含 2 年内 3 次原厂保养服务</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-software" data-analytics-section-engagement="name:software">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-4 large-offset-1 small-12 small-offset-0 heading-column">
+						<h2 class="typography-headline">极 速 换 新</h2>
+					</div>
+					<div class="column large-6  small-12">
+						<p>极速换新服务可跳过中间环节，在联络 XWF 告知损坏情况的同时即刻为您寄出置换产品，提供极致畅快的置换体验</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-software" data-analytics-section-engagement="name:software">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-4 large-offset-1 small-12 small-offset-0 heading-column">
+						<h2 class="typography-headline">为你的 Yagi <span class="nowrap">提供安全保障</h2>
+					</div>
+					<div class="column large-6  small-12">
+						<p>极速换新服务可跳过中间环节，在联络 XWF 告知损坏情况的同时即刻为您寄出置换产品，提供极致畅快的置换体验</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-plans" data-analytics-section-engagement="name:plans">
+			<div class="section-content" data-pricing-hide-all="SJTU2CH/A,SJTR2CH/A,SJTP2CH/A,SEH62">
+				<div class="row">
+					<div class="column large-4 large-offset-1 medium-3 small-12 small-offset-0 section-headline">
+						<h2 class="typography-headline-reduced">为你的 Yagi <span class="nowrap">提供安全保障</span></h2>
+					</div>
+					<div class="column column-plan-group large-6 medium-7 medium-offset-1 small-12 small-offset-0">
+						<div class="XWFcare-plan pricing-columns-2"
+							data-pricing-hide-all="SJTU2CH/A,SJTR2CH/A,SJTP2CH/A,SEH62">
+							<h2 class="typography-eyebrow">XWF Care+ 服务计划</h2>
+							<p>你可以购买固定期限的保修服务。</p>
+							<div class="flex-row column-labels typography-pricing-body-semibold">
+								<div class="column column-1 column-dynamic-pricing">
+									<p>1 年期</p>
+								</div>
+								<br>
+								<hr>
+								<div>
+									<p style="text-align-last: justify;"><span>XWF-Yagi</span> <span>RMB:114514</span></p>
+								</div>
+								<br>
+								<div class="column column-1 column-dynamic-pricing">
+									<p>2 年期</p>
+								</div>
+								<br>
+								<hr>
+								<div>
+									<p style="text-align-last: justify;"><span>XWF-Yagi</span> <span>RMB:1919810</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-how-to-buy" data-analytics-section-engagement="name:how to buy">
+			<div class="section-content">
+				<div class="row noproducts">
+					<div class="column large-10 large-centered small-12">
+						<h2 class="typography-headline">如 何 购 买</h2>
+						<div class="copy-section-1">
+							<ol class="list">
+								<li>XWF Care+ 服务计划可在购买新 XWF Yagi 的同时进行购买。</li>
+								<li>或可在购买 XWF Yagi 之日起 7 天内通过以下方式进行购买：</li>
+								<ul>
+									<li>使用您的手机，通过“额外支持”部分的联系方式联系 XWF</li>
+								</ul>
+							</ol>
+						</div>
+						<div class="copy-section-2">
+							<p>了解如何为现有的服务计划续保，同样请联系 XWF。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-support" data-analytics-section-engagement="name:additional-support">
+			<div class="section-content">
+				<div class="row heading-row">
+					<div class="column large-12 small-12">
+						<h2 class="typography-headline">额外支持</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column large-6 small-12 chat-support">
+						<figure class="image-chat-support-icon"></figure>
+						<h2 class="headline typography-support-headline centerall">通过Tencent QQ获取技术支持，<br class="hide-for-xsmall">安排维修等服务。</h2>
+						<p>在<a href="/">这里</a>添加 BG7XWF 为好友。</p>
+						<a href="/" data-analytics-title="contact apple support" data-analytics-exit-link="" class="icon-wrapper">
+							<span class="icon-copy">联系 XWF 技术支持</span>
+							<span class="icon icon-after more"></span>
+						</a>
+					</div>
+					<div class="column large-6 small-12 support-app">
+						<figure class="image-chat-support-icon"></figure>
+						<h2 class="headline typography-support-headline centerall">通过 WeChat 获取技术支持，<br class="hide-for-xsmall">安排维修等服务。</h2>
+						<p>在<a href="/">这里</a>添加 BG7XWF 为好友。</p>
+						<a href="/" data-analytics-title="contact apple support" data-analytics-exit-link="" class="icon-wrapper">
+							<span class="icon-copy">联系 XWF 技术支持</span>
+							<span class="icon icon-after more"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!--/main-->
+	<script src="./Dependency/main.built.js" type="text/javascript"
+		charset="utf-8"></script><span
+		style="visibility: hidden; position: absolute; top: 0px; z-index: -1;">&nbsp;</span>
+
+
+
+
+
+	<script src="./Dependency/autopricing.built.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="./Dependency/modal.css">
+	<script src="./Dependency/autofilms.built.js" type="text/javascript"></script>
+
+
+	<script type="text/javascript" src="chrome-extension://bngpiglbalmenaabohcooocpnljgfemj/injected.js"></script>
+</body>
+
+</html>
